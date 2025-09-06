@@ -1,0 +1,171 @@
+/* === Bodoni Font === */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+/* === Bodoni Heading Styling === */
+.bodoni-heading {
+  font-family: 'Bodoni Moda', serif;
+  letter-spacing: -0.02em;
+  position: relative;
+  display: inline-block;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+/* === Wen Launch Theme Variables === */
+:root {
+  --background: #0a0a0a; /* Deep matte black */
+  --foreground: #ffffff; /* Primary text color */
+  --secondary: #a1a1a1; /* Muted gray text */
+  --highlight2: #e63946; /* Pinkish-red accent (icons, hover, highlights) */
+  --highlight2: #e63946; /* Pinkish-red accent (icons, hover, highlights) */
+  --card-bg: rgba(15, 15, 15, 0.65);
+  --radius: 1.2rem;
+  --shadow: 0 8px 28px rgba(255, 255, 255, 0.06);
+  --font-sans: 'Inter', 'Poppins', 'Montserrat', Arial, sans-serif;
+}
+
+/* === Base Body Styling === */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  transition: background 0.5s ease, color 0.5s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Headings === */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--foreground);
+}
+
+/* === Glassmorphic Cards === */
+.glass-card {
+  backdrop-filter: blur(16px);
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.08);
+}
+
+/* === Buttons === */
+button {
+  background-color: var(--foreground);
+  color: #000;
+  font-weight: 600;
+  padding: 0.75rem 1.6rem;
+  border-radius: var(--radius);
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--highlight);
+  color: #fff;
+  box-shadow: #D9D9D6;
+  transform: scale(1.03);
+}
+
+button:disabled {
+  background-color: #333;
+  color: #777;
+  cursor: not-allowed;
+}
+
+/* === Accent Buttons === */
+.button-accent {
+  background-color: var(--highlight);
+  color: #fff;
+  box-shadow: 0 0 15px rgba(230, 57, 70, 0.3);
+}
+
+.button-accent:hover {
+  box-shadow: 0 0 30px rgba(230, 57, 70, 0.5);
+  transform: scale(1.05);
+}
+
+/* === Icons === */
+.icon {
+  color: var(--highlight);
+  transition: transform 0.2s ease-in-out;
+}
+.icon:hover {
+  transform: scale(1.2);
+}
+
+/* === Text Variants === */
+.text-muted {
+  color: var(--secondary);
+}
+
+/* === Status Messages === */
+.status-box {
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+  font-weight: 500;
+  box-shadow: var(--shadow);
+  color: var(--foreground);
+}
+
+/* === Feature Grid === */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  backdrop-filter: blur(18px);
+  background: rgba(20, 20, 20, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  transition: all 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(255, 255, 255, 0.08);
+}
+
+/* === Scrollbar Styling === */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #141414;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--highlight);
+  border-radius: 10px;
+}
+
+/* === Animations === */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in {
+  animation: fade-in 0.7s ease-out forwards;
+}
+
