@@ -82,3 +82,8 @@ npm run dev
 
 ---
 
+## **UI**
+<img width="1919" height="901" alt="image" src="https://github.com/user-attachments/assets/422ec92c-579b-4549-9823-ca70f1cd4579" />
+<img width="1919" height="897" alt="image" src="https://github.com/user-attachments/assets/68a0981e-8663-44d4-9b9e-44145b1f337a" />
+<img width="1919" height="899" alt="image" src="https://github.com/user-attachments/assets/e032d97b-15bc-41a4-b454-ba6cb6c0e7ed" />
+<img width="1919" height="900" alt="image" src="https://github.com/user-attachments/assets/9ccba6d3-12d4-4d76-b0b8-9119688c7e20" />
