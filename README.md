@@ -31,6 +31,11 @@ Managing music playlists across multiple streaming services is tedious. This app
 
 ---
 
+## Flow 
+
+<img width="627" height="695" alt="image" src="https://github.com/user-attachments/assets/e1be0e5b-00a6-4f02-bdc5-150053b6f679" />
+
+
 ## **Current Limitations**
 
 - Currently fully supports **Spotify and YouTube Music** only.  
